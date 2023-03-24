@@ -22,11 +22,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0px;
+}
+
+.buttonStyle {
+  background-color: #282c34;
 }
 
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
