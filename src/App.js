@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import About from './pages/About';
+import Home from './pages/Home';
+import Pageone from './pages/Pageone';
 
 function App() {
-  return (
-    <div className="App">
-      <div className="buttonStyle" style={{ display: "flex" }}>
-        <button style={{ marginLeft: "auto" }}  onClick={() => this.login()}>
-        Login
-        </button>
-        <button style={{ marginRight: "auto" }}  onClick={() => this.logout()}>
-        Logout
-        </button>
-      </div>
-      <header className="App-header">
-      The Web Testament
-      <button> To The Beginning </button>
-      </header>
-    </div>
-  );
+  let component
+  switch(window.location.pathname) {
+    case "/":
+      component = <Home />
+      break
+    case "/about":
+      component = <About />
+      break
+    case "/page1":
+      component = <Pageone />
+      break
+    default:
+      break
+    }
+    return (<>
+      <Navbar />
+      {component}
+    </>
+    );
 }
 
 export default App;
