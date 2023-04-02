@@ -6,7 +6,7 @@ export default function Navbar() {
                 <a href="/about">About</a>
             </li>
             <li>
-                <a href="/page1">Page 1</a>
+                <a href="/1">Page 1</a>
             </li>
         </ul>
     </nav>
