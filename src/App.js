@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Navbar';
 import About from './pages/About';
 import Home from './pages/Home';
+import Purchase from "./pages/Purchase";
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
@@ -119,6 +120,10 @@ function App() {
     case "/about":
       locationDNE = false
       Component = About
+      break;
+    case "/purchase":
+      locationDNE = false
+      Component = Purchase
       break;
     default:
       if((parseInt((window.location.pathname).substring(1)) <= 50) && (parseInt((window.location.pathname).substring(1)) >=0)) {
